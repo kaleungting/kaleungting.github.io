@@ -3848,6 +3848,7 @@ ul li {
   background-color: #ffffff;
   flex-direction: column;
   align-items: center;
+  word-wrap: break-word;
 }
 
 .skills-section h2 {
@@ -3861,6 +3862,7 @@ ul li {
   margin-bottom: 0;
   font-size: 1.5em;
   padding: 1em;
+  margin: 0 0 2em 0;
 }
 
 .skills {
@@ -3873,18 +3875,25 @@ ul li {
 .skills-list {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .quote {
   text-align: center;
+  word-wrap: normal;
+  overflow: hidden;
+  margin: 0 0 2em 0;
 }
 
 .features {
   display: grid;
   padding: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   /* grid-template-columns: 400px 400px 400px 400px; */
   grid-gap: 10px;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #icon {
@@ -3922,6 +3931,7 @@ ul li {
 @media screen and (max-width: 600px) {
   .features {
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
   }
   #two {
     height: fit-content;
