@@ -3739,6 +3739,29 @@ body.is-preload #sidebar nav ul li {
   font-size: 1.25em;
 }
 
+#intro .inner {
+  display: flex;
+}
+
+#intro .left {
+  /* padding-right: 3em;
+  margin-right: 3em; */
+}
+
+#intro .right {
+  display: flex;
+  align-items: center;
+}
+
+.portrait1 {
+  display: none;
+}
+
+.portrait2 {
+  height: 20em;
+  margin-left: 4em;
+}
+
 @media screen and (max-width: 980px) {
   #intro p br {
     display: none;
@@ -3958,6 +3981,30 @@ ul li {
   .skills-section p {
     font-size: 1em;
   }
+
+  .portrait1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .portrait2 {
+    display: none;
+  }
+
+  .image-cropper {
+    margin: 0 auto;
+    width: 10em;
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
 #three {
@@ -3967,4 +4014,18 @@ ul li {
 #three h2,
 h3 {
   color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .features {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #one,
+  #two,
+  #three {
+    padding-top: 50px;
+  }
 }
